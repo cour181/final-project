@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+	<title>Final Project</title>
+
+	<head>
+
+	<style>
+
+		header
+
+		{
+
+	    background-color:#ffffff;
+
+		}
+
+		</style>
+
+ 
+
+
+	<script>
+
+
+		function load_text(){
+
+		document.getElementById("textArea").innerHTML = "";
+
+
+	}
+
+
+		function clearTextArea() {
+
+		document.getElementById("textArea").value = "";
+
+
+	}
+
+
+		function bold_click(){
+
+		document.getElementById("textArea").style.font.weight = "Bold";
+
+
+	}
+
+
+		function underline_click(){
+
+		document.getElementById("textArea").style.font.decoration = "Underline";
+
+
+	}
+
+
+		function italic_click(){
+
+		document.getElementById("textArea").style.font.style = "Italic";
+
+	}
+
+	 
+
+
+	</script>
+
+
+	</head>
+
+
+	 
+
+	
+	<body onload="load_text()"><h1 style="color: yellow; background-color: #4B8A00; width: 1400px">Cleo's Notepad</h1>
+
+
+	<form NAME="controls" ID="controls">
+
+		<select style="WIDTH: 610px">
+
+			<option>Select---->Font</option>
+
+			<option>Arial Black</option>
+
+			<option>Sarif</option>
+
+			<option>San-Sarif</option>
+
+		</select>
+
+		<input id="button1" type="button" value="B" name="button1" style="font-weight: bold; width: 56px; height: 54px" size="28" onclick="bold_click()">
+
+		<input type="button" value="I" style="width: 55px; font-style: italic; height: 54px" size="50" onclick="italic_click()">
+
+		<input id="button1" style="width: 56px; height: 54px; text-decoration: underline" type="button" size="18" value="U" name="button1" onclick="underline_click()">
+
+		<br/><br>
+
+		<textarea id="textArea" style="width: 1400px; height: 282px border: purple" name="output" rows="9" wrap="virtual" cols=48>
+		
+			
+
+		</textarea>
+
+		<br>
+
+		<p align="left"><input TYPE="button" VALUE="Clear" onclick="clearTextArea()"></p>
+
+		<input TYPE="button" VALUE="Add New Note" onclick="myTextArea()"></p>
+
+	</FORM>
+
+
+		<h1 id="addNotes"></h1>
+
+<!--		<div id="display"></div>       --->
+
+
+		<input type="button" name="notes" value="Add Commentary" onclick="addNotesForm()">
+
+		<div><hr></div>
+
+		<div> <h3 style="color: #280015; background-color: #58A100; width: 120px">Saved Notes:</h3></div>
+
+		<div id="results"></div>
+
+		<div id="vet"></div>
+
+		<div id="display">
+			<h1 id="display"></h1>
+			
+		</div>
+
+		<script src="script.js"></script>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<footer style="color: #001E2A; background-color: #64B800; width: 1400px"><hr>
+			<h5>
+		  <p>Posted by: Court181 & A.Ross</p>
+		  <p>Contact information: <a href="mailto:courtone81@gmail.com">courtone81@gmail.com</a>.</p>
+		  <p>Contact information: <a href="mailto:adisoross@gmail.com">adisoross@gmail.com</a>.</p>
+		</h5>
+		</footer>
+
+
+	</body>
+
+
+	</html>
+
